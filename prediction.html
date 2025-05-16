@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Prediction Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-r from-purple-500 to-pink-500 flex flex-col items-center justify-center pb-3">
+
+  <div class="flex flex-col sm:flex-row items-center justify-center w-full px-4">
+    <div class="max-w-md bg-white rounded-lg shadow-lg p-8 sm:p-6 md:p-8 w-full sm:w-auto">
+      <h1 class="text-3xl font-bold mb-6 text-center text-purple-800">Enter all details</h1>
+      <form>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <div class="mb-4">
+              <label for="Age" class="block text-gray-700 font-bold mb-2">Age</label>
+              <input type="number" name="Age" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="Pregnancies" class="block text-gray-700 font-bold mb-2">Pregnancies</label>
+              <input type="number" name="Pregnancies" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="Glucose" class="block text-gray-700 font-bold mb-2">Glucose</label>
+              <input type="number" name="Glucose" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="BloodPressure" class="block text-gray-700 font-bold mb-2">Blood Pressure</label>
+              <input type="number" name="BloodPressure" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+          </div>
+          <div>
+            <div class="mb-4">
+              <label for="Insulin" class="block text-gray-700 font-bold mb-2">Insulin</label>
+              <input type="number" name="Insulin" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="BMI" class="block text-gray-700 font-bold mb-2">BMI</label>
+              <input type="number" name="BMI" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="SkinThickness" class="block text-gray-700 font-bold mb-2">Skin Thickness</label>
+              <input type="number" name="SkinThickness" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+            <div class="mb-4">
+              <label for="DPF" class="block text-gray-700 font-bold mb-2">DPF</label>
+              <input type="number" name="DPF" class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <button type="submit" class="py-2 px-4 rounded bg-purple-500 hover:bg-purple-700 text-white font-bold">
+            Predict
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="w-full sm:w-auto mx-auto mt-8 sm:mt-0 sm:ml-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg mx-4 sm:mx-0 w-full max-w-3xl">
+        <h2 class="text-2xl font-bold mb-4 text-purple-800 text-center">About the Parameters</h2>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>Age:</strong> The age of the patient. Risk increases with age.</li>
+          <li><strong>Pregnancies:</strong> Number of pregnancies. Related to insulin sensitivity.</li>
+          <li><strong>Glucose:</strong> Plasma glucose concentration after test. High value = risk.</li>
+          <li><strong>Blood Pressure:</strong> Diastolic pressure. High pressure = higher diabetes risk.</li>
+          <li><strong>Insulin:</strong> Abnormal insulin = possible resistance.</li>
+          <li><strong>BMI:</strong> Body Mass Index. Obesity is a major risk factor.</li>
+          <li><strong>Skin Thickness:</strong> Indicates body fat distribution.</li>
+          <li><strong>DPF:</strong> Diabetes Pedigree Function. Indicates genetic influence.</li>
+        </ul>
+      </div>
+
+      <!-- Result section (example static) -->
+      <!--
+      <div class="bg-green-100 border border-green-400 text-green-700 py-2 rounded text-center max-w-3xl mt-4">
+        <img src="https://example.com/some-gif.gif" alt="Prediction GIF" class="mx-auto pt-4 rounded-md"/>
+        <p class="font-bold text-2xl px-3 mx-2">You are not diabetic</p>
+      </div>
+      -->
+    </div>
+  </div>
+
+</body>
+</html>
